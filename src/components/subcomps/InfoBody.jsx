@@ -1,10 +1,9 @@
 import { useContext } from "react";
 import { contexto } from "../../context/contextForm";
-import {perfil, educacion, experiencia} from '../../datos/informacion'
 
 export default function InfoBody() {
-  const { colorBody, textoBody } = useContext(contexto);
-  // perfil, educacion, experiencia
+  const { colorBody, textoBody, perfil, educacion, experiencia } =
+    useContext(contexto);
 
   return (
     <>

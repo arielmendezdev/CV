@@ -5,8 +5,6 @@ import { contexto } from "../../context/contextForm";
 export default function VistaEdu() {
   const { textoBody, educacion, eliminarEdu } = useContext(contexto);
 
-  
-
   return (
     <div className="crear-div-educacion">
       {educacion ? (
@@ -27,11 +25,15 @@ export default function VistaEdu() {
                   </div>
                 </div>
                 <div className="flex justify-between">
-                    <div>
-                        <h1 className="crear-educ-titulo">» {educ.tituloRecibido}</h1>
-                        <h1 className="crear-educ-descripcion">{educ.descripcion}</h1>
-                    </div>
-                    <button onClick={eliminarEdu}>eliminar</button>
+                  <div>
+                    <h1 className="crear-educ-titulo">
+                      » {educ.tituloRecibido}
+                    </h1>
+                    <h1 className="crear-educ-descripcion">
+                      {educ.descripcion}
+                    </h1>
+                  </div>
+                  <button onClick={eliminarEdu}>eliminar</button>
                 </div>
               </div>
             );

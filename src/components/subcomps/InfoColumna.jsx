@@ -25,24 +25,36 @@ export default function InfoColumna() {
             </h1>
           </div>
           <div className="pdf-container-info">
-            <h1 className="pdf-text pdf-text-info">
-              <b>Tel: </b> {informacion[0].telefono}
-            </h1>
-            <h1 className="pdf-text pdf-text-info">
-              <b>Pais:</b> {informacion[0].pais}
-            </h1>
-            <h1 className="pdf-text pdf-text-info">
-              <b>Provincia:</b> {informacion[0].provincia}
-            </h1>
-            <h1 className="pdf-text pdf-text-info">
-              <b>Ciudad:</b> {informacion[0].localidad}
-            </h1>
-            <h1 className="pdf-text pdf-text-info">
-              <b>CP:</b> {informacion[0].cpostal}
-            </h1>
-            <h1 className="pdf-text pdf-text-info">
-              <b>Email:</b> {informacion[0].email}
-            </h1>
+            {informacion[0].telefono ? (
+              <h1 className="pdf-text pdf-text-info">
+                <b>Tel: </b> {informacion[0].telefono}
+              </h1>
+            ) : null}
+            {informacion[0].pais ? (
+              <h1 className="pdf-text pdf-text-info">
+                <b>Pais:</b> {informacion[0].pais}
+              </h1>
+            ) : null}
+            {informacion[0].provincia ? (
+              <h1 className="pdf-text pdf-text-info">
+                <b>Provincia:</b> {informacion[0].provincia}
+              </h1>
+            ) : null}
+            {informacion[0].localidad ? (
+              <h1 className="pdf-text pdf-text-info">
+                <b>Ciudad:</b> {informacion[0].localidad}
+              </h1>
+            ) : null}
+            {informacion[0].cpostal ? (
+              <h1 className="pdf-text pdf-text-info">
+                <b>CP:</b> {informacion[0].cpostal}
+              </h1>
+            ) : null}
+            {informacion[0].email ? (
+              <h1 className="pdf-text pdf-text-info">
+                <b>Email:</b> {informacion[0].email}
+              </h1>
+            ) : null}
           </div>
         </div>
 

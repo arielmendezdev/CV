@@ -26,7 +26,7 @@ export default function PdfGenerator() {
   };
 
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center w-60 mx-auto">
 
       <div className="pdf-container">
         <div ref={contentRef}>
